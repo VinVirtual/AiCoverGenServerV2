@@ -1,0 +1,46 @@
+{
+    "tags": {
+        "English": "Character speaks English",
+        "Japanese": "Character speaks Japanese",
+        "Other Language": "The character speaks Other Language",
+        "Anime": "Character from anime",
+        "Vtuber": "Character is a vtuber",
+        "Real person": "A person who exists in the real world",
+        "Game character": "A character from the game"
+    },
+    "voice_models": [
+        {
+            "name": "Lisa",
+            "url": "https://huggingface.co/qweshkka/Lisa2ver/resolve/main/Lisa.zip",
+            "description": "Lisa from Genshin Impact",
+            "added": "2023-07-31",
+            "credit": "qweshsmashjuicefruity",
+            "tags": [
+                "Game character",
+                "English"
+            ]
+        },
+        {
+            "name": "Tom Holland",
+            "url": "https://huggingface.co/TJKAI/TomHolland/resolve/main/TomHolland.zip",
+            "description": "Tom Holland (Spider-Man)",
+            "added": "2023-08-03",
+            "credit": "tjkcreative",
+            "tags": [
+                "Real person",
+                "English"
+            ]
+        },
+        {
+            "name": "Black Panther",
+            "url": "https://huggingface.co/TJKAI/BlackPannther/resolve/main/BlackPanther.zip",
+            "description": "Black Panther (Chadwick Boseman) (300 Epochs)",
+            "added": "2023-08-03",
+            "credit": "tjkcreative",
+            "tags": [
+                "Real person",
+                "English"
+            ]
+        }
+    ]       
+}
