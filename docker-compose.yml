@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  aicovergenv2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: aicovergenv2:latest
+    container_name: aicovergenv2
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app/assets:/app/app/assets
+      - ./output:/app/output
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    environment:
+      - PYTHONUNBUFFERED=1
+      - CUDA_VISIBLE_DEVICES=0
+    restart: unless-stopped 

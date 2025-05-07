@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Define the cuDNN version and CUDA version
-CUDNN_VERSION="8.2.4.15"
-CUDA_VERSION="11.4"
+CUDNN_VERSION="8.9.7.29"
+CUDA_VERSION="12.1"
 
 # Download cuDNN
-wget https://developer.download.nvidia.com/compute/redist/cudnn/v8.2.4/cudnn-${CUDA_VERSION}-linux-x64-v${CUDNN_VERSION}.tgz
+wget https://developer.download.nvidia.com/compute/redist/cudnn/v8.9.7/cudnn-${CUDA_VERSION}-linux-x64-v${CUDNN_VERSION}.tgz
 
 # Extract the cuDNN files
 tar -xzvf cudnn-${CUDA_VERSION}-linux-x64-v${CUDNN_VERSION}.tgz

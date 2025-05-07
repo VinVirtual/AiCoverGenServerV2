@@ -1,4 +1,4 @@
-# AICoverGen Server
+# AICoverGenV2 Server
 This project aims to develop a FastAPI server capable of processing song references (YouTube link, local directory, YouTube search, and more in the future) to perform voice modification using AI.
 
 The YouTube download and AI Voice Cover generation functionalities are based on the work from [AICoverGen](https://github.com/SociallyIneptWeeb/AICoverGen).
@@ -9,12 +9,12 @@ Music Structure Analysis for Chorus Extraction from [all-in-one](https://github.
 
 Follow these steps to set up and run the server:
 
-1. Ensure you have a Python 3.9 environment or virtual environment on Ubuntu.
+1. Ensure you have a Python 3.11 environment or virtual environment on Ubuntu.
     ```sh
     sudo add-apt-repository ppa:deadsnakes/ppa
     sudo apt update
-    sudo apt install python3.9 python3.9-dev python3.9-venv
-    python3.9 -m venv venv
+    sudo apt install python3.11 python3.11-dev python3.11-venv
+    python3.11 -m venv venv
     source venv/bin/activate
     ```
 2. Install FFmpeg:
@@ -72,4 +72,4 @@ Follow these steps to set up and run the server:
 
 9 vCPU 50 GB RAM
 
-image: runpod/pytorch:2.1.0-py3.10-cuda11.8.0-devel-ubuntu22.04
+image: runpod/pytorch:2.2.1-py3.11-cuda12.1.0-devel-ubuntu22.04
