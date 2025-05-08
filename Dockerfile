@@ -10,6 +10,9 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+# Create necessary directories
+RUN mkdir -p /tmp/downloads /tmp/demix /tmp/spectrogram /tmp/song_output
+
 # Copy the current directory contents into the container at /app
 COPY . /app
 

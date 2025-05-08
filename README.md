@@ -73,3 +73,22 @@ Follow these steps to set up and run the server:
 9 vCPU 50 GB RAM
 
 image: runpod/pytorch:2.2.1-py3.11-cuda12.1.0-devel-ubuntu22.04
+
+## Important Notes
+
+### Keeping yt-dlp Up to Date
+YouTube frequently changes their site, which can break download functionality. If you encounter issues with YouTube downloads, update yt-dlp to the latest version:
+
+```
+pip install -U yt-dlp
+```
+Or rebuild your Docker image if using Docker.
+
+### Adding Custom Voice Models
+To add your own RVC voice model:
+1. Place your `.pth` and `.index` files in a new folder under `app/assets/rvc_models/`, named after your model (e.g., `luna`).
+   - Example:
+     - `app/assets/rvc_models/luna/luna.pth`
+     - `app/assets/rvc_models/luna/luna.index`
+2. In your API request, set `"voice_model": "luna"`.
+3. No server restart is needed unless the model is not detected.
